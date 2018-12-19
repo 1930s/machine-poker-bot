@@ -1,0 +1,29 @@
+{
+  "name": "machine-poker-bot",
+  "version": "1.0.0",
+  "description": "Experimentation with poker bots",
+  "main": "game-original.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeromeetienne/machine-poker-bot.git"
+  },
+  "keywords": [
+    "poker",
+    "bot"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeromeetienne/machine-poker-bot/issues"
+  },
+  "homepage": "https://github.com/jeromeetienne/machine-poker-bot#readme",
+  "dependencies": {
+    "machine-poker": "^0.5.1"
+  }
+}

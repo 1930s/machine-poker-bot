@@ -1,2 +1,2 @@
 # machine-poker-bot
-Experimentation with poker bot - Using MachinePoker
+Experimentation with poker bot - Using [MachinePoker](https://github.com/mdp/MachinePoker)

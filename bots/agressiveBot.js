@@ -1,22 +1,5 @@
-let MonteCarloSimulation = require('./monte-carlo-simulation.js')
-
-// let holeCards = ["Ts", "Ts"]
-// let communityCards = []
-// let nbPlayers = 8
-// var handLikelyHoodToWin = MonteCarloSimulation.simulateMultipleRound(10000, holeCards, communityCards, nbPlayers)
-// console.log('handLikelyHoodtoWin', handLikelyHoodToWin)
-
-function computePotSize(gameData){
-	let allWages = gameData.players.map((player)=> player.wagered)
-	let potSize = allWages.reduce( (accumulator, currentValue) => accumulator + currentValue)
-	return potSize
-}
-
-function computePositionIndex(gameData){
-	let positionIndex = gameData.players.findIndex((player)=> player.name === gameData.self.name)
-	return positionIndex
-}
-
+let MonteCarloSimulation = require('../lib/monte-carlo-simulation.js')
+let utils = require('../lib/utils')
 
 module.exports = function () {
 
@@ -34,7 +17,7 @@ module.exports = function () {
 		var likelyHoodToWin = MonteCarloSimulation.simulateMultipleRound(100, myHoleCards, communityCards, nbOtherPlayers)
 		console.log('handLikelyHoodtoWin', likelyHoodToWin)
 
-		var potSize = computePotSize(game)
+		var potSize = utils.computePotSize(game)
 		var potOdds = potSize / game.betting.call	// FIXME what is game.betting.call === 0
 		var pokerEquity = likelyHoodToWin
 		var potEquity = Math.round(likelyHoodToWin*potSize)

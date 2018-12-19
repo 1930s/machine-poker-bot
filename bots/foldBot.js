@@ -1,15 +1,15 @@
 module.exports = function () {
 
-  var info = {
-    name: "FoldBot"
-  };
+	var info = {
+		name: "FoldBot"
+	};
 
-  function update(game) {
-    if (game.state !== "complete") {
-      return 0
-    }
-  };
+	function update(game) {
+		if (game.state !== "complete") {
+			return 0
+		}
+	};
 
-  return { update: update, info: info }
+	return { update: update, info: info }
 
 }

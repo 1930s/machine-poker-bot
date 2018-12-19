@@ -3,8 +3,8 @@ var MachinePoker = require('machine-poker')
 var CallBot = require('./bots/callBot')
 var RandBot = require('./bots/randBot')
 var FoldBot = require('./bots/foldBot')
-var AggressiveBot = require('./bots/agressivePlayerBot.js')
-var HonestBot = require('./bots/honestPlayerBot.js')
+var AggressiveBot = require('./bots/agressiveBot.js')
+var HonestBot = require('./bots/honestBot.js')
 
 
 var table = MachinePoker.create({

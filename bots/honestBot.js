@@ -1,4 +1,4 @@
-let MonteCarloSimulation = require('./monte-carlo-simulation.js')
+let MonteCarloSimulation = require('../lib/monte-carlo-simulation.js')
 
 module.exports = function () {
 

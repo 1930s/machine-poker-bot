@@ -1,15 +1,15 @@
 module.exports = function () {
 
-  var info = {
-    name: "CallBot"
-  };
+	var info = {
+		name: "CallBot"
+	};
 
-  function update(game) {
-    if (game.state !== "complete") {
-      return game.betting.call
-    }
-  };
+	function update(game) {
+		if (game.state !== "complete") {
+			return game.betting.call
+		}
+	};
 
-  return { update: update, info: info }
+	return { update: update, info: info }
 
 }
